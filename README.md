@@ -19,7 +19,9 @@ The following directory tree is programatically generated to provide an overview
 │   ├── logs
 │   │   └── python_logs.txt
 │   ├── main.py
-│   └── requirements.txt
+│   ├── requirements.txt
+│   └── tests
+│       └── test_api.py
 ├── docker-compose.yaml
 ├── minio
 │   ├── Dockerfile
@@ -32,7 +34,7 @@ The following directory tree is programatically generated to provide an overview
     │   └── weaviate_logs.txt
     └── schema.json
 
-6 directories, 14 files
+7 directories, 15 files
 
 ```
 <!-- DIRECTORY_TREE_END -->
