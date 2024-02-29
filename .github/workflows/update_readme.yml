@@ -1,0 +1,48 @@
+name: Update README with Directory Tree
+
+on:
+  push:
+    branches:
+      - main  # or your default branch
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        persist-credentials: false  # avoids persisting GitHub credentials
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install tree command or alternative
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y tree
+
+    - name: Generate Directory Tree
+      run: |
+        tree -I '.git|node_modules|other-directories-to-exclude' > DIRECTORY_TREE.txt
+
+    - name: Update README.md
+      run: python .github/scripts/update_readme.py
+
+    - name: Commit changes
+      run: |
+        git config --local user.email "cdaprod@cdaprod.dev"
+        git config --local user.name "Cdaprod"
+        git add README.md
+        if git diff --staged --quiet; then
+          echo "No changes to commit."
+        else
+          git commit -m "Automated README update: directory tree"
+        fi
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GH_TOKEN }}
+        branch: ${{ github.ref }}

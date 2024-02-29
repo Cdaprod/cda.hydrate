@@ -1,0 +1,34 @@
+[
+  {
+    "class": "Article",
+    "properties": {
+      "title": "LangChain: OpenAI + S3 Loader",
+      "content": "This comprehensive guide demonstrates the integration of MinIO, Langchain, and OpenAI GPT-3.5 for summarizing documents stored in MinIO buckets. It outlines setting up Langchain's S3DirectoryLoader and S3FileLoader for fetching documents and leveraging OpenAI's GPT-3.5 model to efficiently summarize large volumes of data. This integration exemplifies the potential of AI in extracting and presenting key information from comprehensive data sources, showcasing a streamlined approach to data analysis and interpretation.",
+      "url": "https://blog.min.io/langchain-openai-s3-loader/"
+    }
+  },
+  {
+    "class": "Article",
+    "properties": {
+      "title": "MinIO Webhook Event Notifications",
+      "content": "This article delves into the webhook event notification system implemented by MinIO, detailing its setup, configuration, and practical applications. It emphasizes how webhooks in MinIO enhance real-time data processing and integration capabilities, allowing developers to efficiently trigger actions and notifications based on specific storage events.",
+      "url": "https://blog.min.io/minio-webhook-event-notifications/"
+    }
+  },
+  {
+    "class": "Article",
+    "properties": {
+      "title": "MinIO Postgres Event Notifications",
+      "content": "Focusing on the integration between MinIO and PostgreSQL, this piece explores how MinIO's event notification system can be used to synchronize data events with a PostgreSQL database. It provides a step-by-step guide on configuring MinIO to send notifications to PostgreSQL, facilitating automated data workflows and analytics.",
+      "url": "https://blog.min.io/minio-postgres-event-notifications/"
+    }
+  },
+  {
+    "class": "Article",
+    "properties": {
+      "title": "From Docker to Localhost",
+      "content": "Offering a comprehensive guide for transitioning Docker containerized applications to localhost environments, this article covers essential strategies, tooling, and practices. It addresses common challenges and solutions in moving services out of containers for local development, testing, or deployment, aiming to streamline development workflows.",
+      "url": "https://blog.min.io/from-docker-to-localhost/"
+    }
+  }
+]

@@ -1,0 +1,38 @@
+name: Docker-Compose Build & Log Test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      docker:
+        image: docker:19.03.12
+        options: --privileged
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Docker Compose
+      run: |
+        docker-compose -f docker-compose.yaml up -d
+
+    - name: Capture logs for MinIO
+      run: docker-compose logs minio > minio_logs.txt
+
+    - name: Capture logs for Weaviate
+      run: docker-compose logs weaviate > weaviate_logs.txt
+
+    - name: Capture logs for Python Application
+      run: docker-compose logs python-app > python_app_logs.txt
+
+    - name: Upload logs as artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: service-logs
+        path: |
+          - ./minio/logs/minio_logs.txt
+          - ./weaviate/logs/weaviate_logs.txt
+          - ./python/logs/python_app_logs.txt
+
+    - name: Clean up
+      run: docker-compose down
