@@ -23,6 +23,7 @@ The following directory tree is programatically generated to provide an overview
 │   └── tests
 │       └── test_api.py
 ├── docker-compose.yaml
+├── example.env
 ├── minio
 │   ├── Dockerfile
 │   ├── entrypoint.sh
@@ -34,7 +35,7 @@ The following directory tree is programatically generated to provide an overview
     │   └── weaviate_logs.txt
     └── schema.json
 
-7 directories, 15 files
+7 directories, 16 files
 
 ```
 <!-- DIRECTORY_TREE_END -->
