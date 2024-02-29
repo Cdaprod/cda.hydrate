@@ -15,6 +15,9 @@ done
 mc alias set myminio http://localhost:9000 minio minio123
 mc mb myminio/weaviate-bucket
 mc mb myminio/langchain-bucket
+mc mb myminio/cda-datasets
+mc mb myminio/python-functions
+mc mb myminio/testtesttest
 
 # Additional setup commands can go here
 

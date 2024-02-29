@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "pip" # Python package manager
+    directory: "/" # Location of the Python project
+    schedule:
+      interval: "weekly" # How often to check for updates
+  - package-ecosystem: "docker" # Docker
+    directory: "/" # Location of Dockerfiles
+    schedule:
+      interval: "weekly"
