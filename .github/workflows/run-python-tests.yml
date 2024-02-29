@@ -19,7 +19,8 @@ jobs:
         env:
           MINIO_ROOT_USER: minio
           MINIO_ROOT_PASSWORD: minio123
-        options: server /data
+        options: >-
+          server /data --console-address ":9001"
 
       weaviate:
         image: semitechnologies/weaviate:latest
