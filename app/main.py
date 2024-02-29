@@ -1,111 +1,68 @@
+%%writefile hydrate_minio_weaviate_unstruct_api.py
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+from typing import List
+import requests
+from minio import Minio
 import weaviate
-import json
+import os
+import tempfile
+import re
+from unstructured.partition.auto import partition
+import io
 
-# Configuration
-WEAVIATE_ENDPOINT = "http://weaviate:8080"
-OUTPUT_FILE = "weaviate-data.json"
+app = FastAPI()
 
-# Initialize the client
-client = weaviate.Client(WEAVIATE_ENDPOINT)
-schema = {
-    "classes": [
-        {
-            "class": "Article",
-            "description": "A class to store articles",
-            "properties": [
-                {"name": "title", "dataType": ["string"], "description": "The title of the article"},
-                {"name": "content", "dataType": ["text"], "description": "The content of the article"},
-                {"name": "datePublished", "dataType": ["date"], "description": "The date the article was published"},
-                {"name": "url", "dataType": ["string"], "description": "The URL of the article"}
-            ]
-        },
-        {
-            "class": "Author",
-            "description": "A class to store authors",
-            "properties": [
-                {"name": "name", "dataType": ["string"], "description": "The name of the author"},
-                {"name": "articles", "dataType": ["Article"], "description": "The articles written by the author"}
-            ]
-        }
-    ]
-}
+# Setup for MinIO and Weaviate
+minio_client = Minio("192.168.0.25:9000", access_key="cda_cdaprod", secret_key="cda_cdaprod", secure=False)
+weaviate_client = weaviate.Client("http://192.168.0.25:8080")
+bucket_name = "cda-datasets"
 
-# Fresh delete classes
-try:
-    client.schema.delete_class('Article')
-    client.schema.delete_class('Author')
-except Exception as e:
-    print(f"Error deleting classes: {str(e)}")
+class URLList(BaseModel):
+    urls: List[str]
 
-# Create new schema
-try:
-    client.schema.create(schema)
-except Exception as e:
-    print(f"Error creating schema: {str(e)}")
+def sanitize_url_to_object_name(url):
+    clean_url = re.sub(r'^https?://', '', url)
+    clean_url = re.sub(r'[^\w\-_\.]', '_', clean_url)
+    return clean_url[:250] + '.txt'
 
-data = [
-    {
-        "class": "Article",
-        "properties": {
-            "title": "LangChain: OpenAI + S3 Loader",
-            "content": "This article discusses the integration of LangChain with OpenAI and S3 Loader...",
-            "url": "https://blog.min.io/langchain-openai-s3-loader/"
-        }
-    },
-    {
-        "class": "Article",
-        "properties": {
-            "title": "MinIO Webhook Event Notifications",
-            "content": "Exploring the webhook event notification system in MinIO...",
-            "url": "https://blog.min.io/minio-webhook-event-notifications/"
-        }
-    },
-    {
-        "class": "Article",
-        "properties": {
-            "title": "MinIO Postgres Event Notifications",
-            "content": "An in-depth look at Postgres event notifications in MinIO...",
-            "url": "https://blog.min.io/minio-postgres-event-notifications/"
-        }
-    },
-    {
-        "class": "Article",
-        "properties": {
-            "title": "From Docker to Localhost",
-            "content": "A guide on transitioning from Docker to localhost environments...",
-            "url": "https://blog.min.io/from-docker-to-localhost/"
-        }
-    }
-]
+def prepare_text_for_tokenization(text):
+    clean_text = re.sub(r'\s+', ' ', text).strip()
+    return clean_text
 
-for item in data:
-    try:
-        client.data_object.create(
-            data_object=item["properties"],
-            class_name=item["class"]
-        )
-    except Exception as e:
-        print(f"Error indexing data: {str(e)}")
+@app.post("/process-urls/")
+async def process_urls(url_list: URLList):
+    if not minio_client.bucket_exists(bucket_name):
+        minio_client.make_bucket(bucket_name)
+    
+    for url in url_list.urls:
+        try:
+            response = requests.get(url)
+            response.raise_for_status()  # Check for HTTP issues
 
-# Fetch and export objects
-try:
-    query = '{ Get { Article { title content datePublished url } } }'
-    result = client.query.raw(query)
-    articles = result['data']['Get']['Article']
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-        json.dump(articles, f, ensure_ascii=False, indent=4)
-    print(f"Exported {len(articles)} articles to {OUTPUT_FILE}")
-except Exception as e:
-    print(f"An error occurred: {str(e)}")
+            html_content = io.BytesIO(response.content)
+            elements = partition(file=html_content, content_type="text/html")
+            combined_text = "\n".join([e.text for e in elements if hasattr(e, 'text')])
+            combined_text = prepare_text_for_tokenization(combined_text)
+            object_name = sanitize_url_to_object_name(url)
 
-# Create backup
-try:
-    result = client.backup.create(
-        backup_id="backup-id-2",
-        backend="s3",
-        include_classes=["Article", "Author"],
-        wait_for_completion=True,
-    )
-    print("Backup created successfully.")
-except Exception as e:
-    print(f"Error creating backup: {str(e)}")
+            with tempfile.NamedTemporaryFile(delete=False, mode="w", encoding="utf-8", suffix=".txt") as tmp_file:
+                tmp_file.write(combined_text)
+                tmp_file_path = tmp_file.name
+            
+            minio_client.fput_object(bucket_name, object_name, tmp_file_path)
+            os.remove(tmp_file_path)  # Clean up
+
+            # Now insert into Weaviate
+            data_object = {
+                "content": combined_text,
+                "source": url
+            }
+            weaviate_client.data_object.create(data_object=data_object, class_name="Document")
+
+        except requests.RequestException as e:
+            raise HTTPException(status_code=400, detail=f"Failed to fetch URL {url}: {e}")
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Error processing {url}: {e}")
+
+    return {"message": "URLs processed and stored in MinIO and Weaviate successfully"}
