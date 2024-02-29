@@ -1,1 +1,6 @@
+fastapi
+uvicorn
+requests
+minio
 weaviate-client
+unstructured
