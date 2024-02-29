@@ -16,6 +16,10 @@ jobs:
       run: |
         docker-compose -f docker-compose.yaml up -d
 
+    - name: Run API tests
+      run: |
+        docker-compose exec app python -m pytest /app/tests/test_api.py
+
     - name: Capture logs for MinIO
       run: docker-compose logs minio > minio_logs.txt
 

@@ -4,3 +4,5 @@ requests
 minio
 weaviate-client
 unstructured
+httpx
+pytest
