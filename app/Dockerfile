@@ -1,17 +1,15 @@
-# Use a slim version of Python 3.9 as the base image
 FROM python:3.9-slim
 
-# Set the working directory in the container
 WORKDIR /app
 
-# Copy the application files to the container
-COPY . .
-
-# Install the dependencies from the requirements file
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Inform Docker that the container listens on port 8080 (if your application has a web interface)
-EXPOSE 8080
+COPY . .
 
-# Define the command to run the application
-CMD ["python", "main.py"]
+EXPOSE 8000
+
+# Copy and set the entrypoint script
+COPY entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/entrypoint.sh
+ENTRYPOINT ["entrypoint.sh"]

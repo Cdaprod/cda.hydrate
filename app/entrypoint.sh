@@ -14,4 +14,5 @@ wait_for_weaviate() {
 wait_for_weaviate
 
 echo "Weaviate is up - executing command"
-exec python main.py
+# Start the FastAPI app using Uvicorn
+exec uvicorn main:app --host 0.0.0.0 --port 8000 --reload

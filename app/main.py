@@ -65,3 +65,8 @@ async def process_urls(url_list: URLList):
             raise HTTPException(status_code=500, detail=f"Error processing {url}: {e}")
 
     return {"message": "URLs processed and stored in MinIO and Weaviate successfully"}
+    
+ 
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
