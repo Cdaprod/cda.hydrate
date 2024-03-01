@@ -9,7 +9,6 @@ import os
 
 app = FastAPI()
 
-# Manually specify the path if running outside Docker
 load_dotenv(dotenv_path=".env.local")
 
 # Now access your environment variables
@@ -26,14 +25,17 @@ weaviate_client = weaviate.Client(WEAVIATE_ENDPOINT)
 
 class URLList(BaseModel):
     urls: List[str]
+    bucket_name: str
 
 @app.post("/process-urls/")
-async def process_urls(url_list: URLList):
+async def process_urls(request_data: URLList):
     # Utilize the imported function to process URLs
     try:
-        fetch_and_process_urls(url_list.urls, bucket_name, minio_client, weaviate_client)
+        # Pass the bucket_name from the request to the function
+        fetch_and_process_urls(request_data.urls, request_data.bucket_name, minio_client, weaviate_client)
         return {"message": "URLs processed and stored in MinIO and Weaviate successfully"}
     except Exception as e:
+        # Provide more specific error handling based on your application's needs
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":

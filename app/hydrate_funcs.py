@@ -7,11 +7,6 @@ import re
 from unstructured.partition.auto import partition
 import io
 
-# Initialize clients
-minio_client = Minio("192.168.0.25:9000", access_key="cda_cdaprod", secret_key="cda_cdaprod", secure=False)
-client = weaviate.Client("http://192.168.0.25:8080")
-bucket_name = "cda-datasets"
-
 def sanitize_url_to_object_name(url):
     clean_url = re.sub(r'^https?://', '', url)
     clean_url = re.sub(r'[^\w\-_\.]', '_', clean_url)
