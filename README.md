@@ -21,6 +21,7 @@ The following directory tree is programatically generated to provide an overview
 │   ├── main.py
 │   ├── requirements.txt
 │   └── tests
+│       ├── clipboard.md
 │       └── test_api.py
 ├── docker-compose.yaml
 ├── example.env
@@ -35,7 +36,7 @@ The following directory tree is programatically generated to provide an overview
     │   └── weaviate_logs.txt
     └── schema.json
 
-7 directories, 16 files
+7 directories, 17 files
 
 ```
 <!-- DIRECTORY_TREE_END -->
