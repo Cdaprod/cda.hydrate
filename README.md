@@ -22,9 +22,10 @@ The following directory tree is programatically generated to provide an overview
 │   │   └── python_logs.txt
 │   ├── main.py
 │   ├── requirements.txt
-│   └── tests
-│       ├── fixing_test_api.md
-│       └── test_api.py
+│   ├── tests
+│   │   ├── fixing_test_api.md
+│   │   └── test_api.py
+│   └── urls.txt
 ├── docker-compose.yaml
 ├── env.docker
 ├── minio
@@ -32,13 +33,15 @@ The following directory tree is programatically generated to provide an overview
 │   ├── entrypoint.sh
 │   └── logs
 │       └── minio_logs.txt
+├── nginx
+│   └── haproxy.cfg
 └── weaviate
     ├── data.json
     ├── logs
     │   └── weaviate_logs.txt
     └── schema.json
 
-7 directories, 19 files
+8 directories, 21 files
 
 ```
 <!-- DIRECTORY_TREE_END -->
