@@ -1,5 +1,5 @@
 fastapi
-uvicorn
+uvicorn[standard]
 requests
 minio
 weaviate-client
@@ -7,3 +7,4 @@ unstructured
 httpx
 pytest
 pytest-asyncio
+python-dotenv
