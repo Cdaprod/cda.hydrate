@@ -1,4 +1,3 @@
-# Use the official MinIO image as the base
 FROM minio/minio
 
 # Expose both the API and Console ports
