@@ -15,7 +15,9 @@ The following directory tree is programatically generated to provide an overview
 ├── README.md
 ├── app
 │   ├── Dockerfile
+│   ├── __init__.py
 │   ├── entrypoint.sh
+│   ├── hydrate_funcs.py
 │   ├── logs
 │   │   └── python_logs.txt
 │   ├── main.py
@@ -24,7 +26,7 @@ The following directory tree is programatically generated to provide an overview
 │       ├── clipboard.md
 │       └── test_api.py
 ├── docker-compose.yaml
-├── example.env
+├── env.docker
 ├── minio
 │   ├── Dockerfile
 │   ├── entrypoint.sh
@@ -36,7 +38,7 @@ The following directory tree is programatically generated to provide an overview
     │   └── weaviate_logs.txt
     └── schema.json
 
-7 directories, 17 files
+7 directories, 19 files
 
 ```
 <!-- DIRECTORY_TREE_END -->
