@@ -1,3 +1,4 @@
+https://tailscale.com/kb/1306/gitops-acls-github?q=gitops
 https://tailscale.com/kb/1281/app-connectors
 https://www.cnx-software.com/2024/02/27/testing-ai-and-llm-on-rockchip-rk3588-using-mixtile-blade-3-sbc-with-32gb-ram/
 https://github.com/Cdaprod/cda.hydrate/settings/actions/runners/new?arch=x64&os=linux
