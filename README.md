@@ -27,7 +27,6 @@ The following directory tree is programatically generated to provide an overview
 │   │   └── test_api.py
 │   └── urls.txt
 ├── docker-compose.yaml
-├── env.docker
 ├── minio
 │   ├── Dockerfile
 │   ├── entrypoint.sh
@@ -41,7 +40,7 @@ The following directory tree is programatically generated to provide an overview
     │   └── weaviate_logs.txt
     └── schema.json
 
-8 directories, 21 files
+8 directories, 20 files
 
 ```
 <!-- DIRECTORY_TREE_END -->
