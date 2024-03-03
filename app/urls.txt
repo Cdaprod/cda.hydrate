@@ -1,3 +1,4 @@
+https://python.langchain.com/docs/modules/model_io/prompts/composition
 https://python.langchain.com/docs/modules/model_io/prompts/quick_start
 https://www.pinecone.io/learn/series/langchain/langchain-prompt-templates/
 https://tailscale.com/kb/1306/gitops-acls-github?q=gitops
