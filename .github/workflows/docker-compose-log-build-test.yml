@@ -31,6 +31,3 @@ jobs:
           app_service_logs.txt
           minio_logs.txt
           weaviate_logs.txt
-
-    - name: Clean up
-      run: docker-compose down
