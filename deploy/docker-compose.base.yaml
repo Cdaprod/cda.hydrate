@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  python-app:
+    image: cdaprod/python-app
+    container_name: python_hydrate
+    build:
+      context: ../app
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      MINIO_ENDPOINT: ${MINIO_ENDPOINT}
+      MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY}
+      MINIO_SECRET_KEY: ${MINIO_SECRET_KEY}
+      USE_SSL: ${USE_SSL}
+      WEAVIATE_ENDPOINT: ${WEAVIATE_ENDPOINT}
+    restart: unless-stopped

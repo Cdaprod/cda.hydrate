@@ -2,12 +2,12 @@ version: '3.8'
 
 services:
   minio:
-    container_name: minio_server
-    image: minio/minio
+    container_name: minio_hydrate
+    image: minio/minio:latest
     build:
-      context: ./minio
+      context: ../minio
     volumes:
-      - ./minio/data:/data
+      - ../minio/data:/data
     ports:
       - "9000:9000"
       - "9001:9001"
@@ -24,7 +24,7 @@ services:
     - '8080'
     - --scheme
     - http
-    container_name: weaviate_server
+    container_name: weaviate_hydrate
     image: semitechnologies/weaviate:latest
     ports:
       - 8080:8080
@@ -40,18 +40,18 @@ services:
       BACKUP_S3_ENDPOINT: ${MINIO_ENDPOINT}
       BACKUP_S3_ACCESS_KEY_ID: ${MINIO_ACCESS_KEY}
       BACKUP_S3_SECRET_ACCESS_KEY: ${MINIO_SECRET_KEY}
-      BACKUP_S3_USE_SSL: 'false'
-      CLUSTER_HOSTNAME: 'node1'
+      BACKUP_S3_USE_SSL: ${USE_SSL}
+      CLUSTER_HOSTNAME: 'urls1'
     volumes:
-      - ./weaviate/data:/var/lib/weaviate
+      - ../weaviate/data:/var/lib/weaviate
     depends_on:
       - minio
 
   python-app:
     image: cdaprod/python-app
-    container_name: python_server
+    container_name: python_hydrate
     build:
-      context: ./app
+      context: ../app
       dockerfile: Dockerfile
     ports:
       - "8000:8000"

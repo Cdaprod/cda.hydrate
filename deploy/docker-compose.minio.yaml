@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  minio:
+    container_name: minio_hydrate
+    image: minio/minio:latest
+    build:
+      context: ../minio
+    volumes:
+      - ../minio/data:/data
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ACCESS_KEY}
+      MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY}
+    command: server /data --console-address ":9001"

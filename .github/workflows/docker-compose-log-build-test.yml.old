@@ -14,7 +14,7 @@ jobs:
 
     - name: Set up Docker Compose
       run: |
-        docker-compose -f docker-compose.yaml up -d
+        docker-compose -f deploy/docker-compose.yaml up -d
         docker-compose logs app > app_service_logs.txt
         docker-compose exec app python -m pytest -v /app/tests/test_api.py || (cat app_service_logs.txt && false)
 
