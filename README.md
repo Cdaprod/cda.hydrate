@@ -26,7 +26,12 @@ The following directory tree is programatically generated to provide an overview
 │   │   ├── fixing_test_api.md
 │   │   └── test_api.py
 │   └── urls.txt
-├── docker-compose.yaml
+├── deploy
+│   ├── docker-compose.base.yaml
+│   ├── docker-compose.minio.yaml
+│   ├── docker-compose.weaviate.yaml
+│   ├── docker-compose.yaml
+│   └── docker.env
 ├── minio
 │   ├── Dockerfile
 │   ├── entrypoint.sh
@@ -40,7 +45,7 @@ The following directory tree is programatically generated to provide an overview
     │   └── weaviate_logs.txt
     └── schema.json
 
-8 directories, 20 files
+9 directories, 24 files
 
 ```
 <!-- DIRECTORY_TREE_END -->
