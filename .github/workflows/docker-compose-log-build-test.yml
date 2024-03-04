@@ -14,10 +14,10 @@ jobs:
 
     - name: Run API tests and capture logs if fail
       run: |
-        if ! docker-compose exec -T python-app python -m pytest -v /app/tests/test_api.py; then
-          docker-compose logs python-app > app_service_logs.txt
-          docker-compose logs minio > minio_logs.txt
-          docker-compose logs weaviate > weaviate_logs.txt
+        if ! docker-compose -f deploy/docker-compose.yaml exec -T python-app python -m pytest -v /app/tests/test_api.py; then
+          docker-compose -f deploy/docker-compose.yaml logs python-app > app_service_logs.txt
+          docker-compose -f deploy/docker-compose.yaml logs minio > minio_logs.txt
+          docker-compose -f deploy/docker-compose.yaml logs weaviate > weaviate_logs.txt
           cat app_service_logs.txt
           exit 1
         fi
