@@ -2,9 +2,9 @@ import requests
 import sys
 import time
 
-service_url = "http://localhost:8000"
+service_url = "http://python-app:8000"
 
-timeout = time.time() + 60*1  # 1 minute from now
+timeout = time.time() + 30*1
 while True:
     try:
         response = requests.get(service_url)
