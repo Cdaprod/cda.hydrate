@@ -1,4 +1,4 @@
-https://python.langchain.com/docs/modules/agents/agent_types/
+https://python.langchain.com/docs/modules/agents/agent_types
 https://python.langchain.com/docs/modules/model_io/prompts/few_shot_examples
 https://python.langchain.com/docs/modules/model_io/prompts/composition
 https://python.langchain.com/docs/modules/model_io/prompts/quick_start
