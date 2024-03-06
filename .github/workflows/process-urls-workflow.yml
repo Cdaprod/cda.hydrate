@@ -9,7 +9,7 @@ on:
 
 jobs:
   process-urls:
-    runs-on: [self-hosted, linux, x64]  # Adjust this to match your runner's labels
+    runs-on: [self-hosted, rpi-swarm]  # Adjust this to match your runner's labels
     working-directory: ./app
     steps:
       - name: Checkout repository
