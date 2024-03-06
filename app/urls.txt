@@ -1,4 +1,4 @@
-https://blog.min.io/minio-weaviate-python-gitops
+https://blog.min.io/minio-weaviate-python-gitops/
 https://blog.min.io/minio-weaviate-unstructured-io
 https://arxiv.org/html/2401.18059v1
 https://python.langchain.com/docs/modules/agents/agent_types/
