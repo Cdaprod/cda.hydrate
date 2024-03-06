@@ -66,7 +66,8 @@ def process_documents_in_minio(bucket_name, processed_object_names):
         os.remove(file_path)
         print(f"MinIO and Weaviate have ingested '{object_name}'! :)")
 
-def fetch_and_process_urls(url_list.urls, BUCKET_NAME):
+#def fetch_and_process_urls(url_list.urls, BUCKET_NAME):
+def fetch_and_process_urls(urls, bucket_name, minio_client, weaviate_client):
     processed_object_names = []  # Track successfully processed URLs
 
     if not minio_client.bucket_exists(bucket_name):

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Function to check if Weaviate is up
 wait_for_weaviate() {
