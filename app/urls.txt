@@ -1,3 +1,4 @@
+https://blog.min.io/minio-weaviate-unstructured-io
 https://arxiv.org/html/2401.18059v1
 https://python.langchain.com/docs/modules/agents/agent_types/
 https://python.langchain.com/docs/modules/model_io/prompts/few_shot_examples
