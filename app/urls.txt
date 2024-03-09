@@ -1,3 +1,4 @@
+https://www.marktechpost.com/2024/03/07/starcoder2-and-the-stack-v2-pioneering-the-future-of-code-generation-with-large-language-models/
 https://swagger.io/specification/
 https://help.openai.com/en/articles/8868588-retrieval-augmented-generation-rag-and-semantic-search-for-gpts
 https://help.openai.com/en/articles/8798878-building-and-publishing-a-gpt
