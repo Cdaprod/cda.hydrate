@@ -1,6 +1,7 @@
 name: Process URLs Workflow
 
 on:
+  dispatch_workflow:
   push:
     branches:
       - models/hydrate
