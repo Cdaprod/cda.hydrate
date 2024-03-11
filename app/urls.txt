@@ -1,3 +1,4 @@
+https://towardsdatascience.com/end-to-end-nlp-project-with-hugging-face-fastapi-and-docker-615a63d80c53
 https://python.langchain.com/docs/modules/model_io/prompts/quick_start
 https://python.langchain.com/docs/expression_language/cookbook/multiple_chains
 https://python.langchain.com/docs/expression_language/cookbook/retrieval
