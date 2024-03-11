@@ -1,3 +1,4 @@
+https://www.promptingguide.ai/techniques/rag
 https://aws.amazon.com/what-is/retrieval-augmented-generation/
 https://www.datastax.com/guides/what-is-retrieval-augmented-generation
 https://towardsdatascience.com/end-to-end-nlp-project-with-hugging-face-fastapi-and-docker-615a63d80c53
