@@ -1,3 +1,4 @@
+https://cookbook.openai.com/
 https://www.promptingguide.ai/techniques/rag
 https://aws.amazon.com/what-is/retrieval-augmented-generation/
 https://www.datastax.com/guides/what-is-retrieval-augmented-generation
