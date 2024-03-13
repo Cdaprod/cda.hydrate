@@ -1,3 +1,4 @@
+https://airbyte.com/tutorials/configure-airbyte-with-python-dagster
 https://cookbook.openai.com/examples/function_calling_with_an_openapi_spec
 https://cookbook.openai.com/
 https://www.promptingguide.ai/techniques/rag
