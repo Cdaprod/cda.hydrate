@@ -16,6 +16,7 @@ The following directory tree is programatically generated to provide an overview
 ├── app
 │   ├── Dockerfile
 │   ├── __init__.py
+│   ├── app.py
 │   ├── entrypoint.sh
 │   ├── hydrate_funcs.py
 │   ├── logs
@@ -45,7 +46,7 @@ The following directory tree is programatically generated to provide an overview
     │   └── weaviate_logs.txt
     └── schema.json
 
-9 directories, 24 files
+9 directories, 25 files
 
 ```
 <!-- DIRECTORY_TREE_END -->
