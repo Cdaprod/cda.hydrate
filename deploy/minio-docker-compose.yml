@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  minio:
+    image: minio/minio
+    container_name: minio_server
+    ports:
+      - "9000:9000"  # MinIO API server
+      - "9001:9001"  # MinIO Console
+    environment:
+      MINIO_ROOT_USER: minio  
+      MINIO_ROOT_PASSWORD: minio123  
+    volumes:
+      - minio_data:/data
+    command: server /data --console-address ":9001"
+
+volumes:
+  minio_data:
