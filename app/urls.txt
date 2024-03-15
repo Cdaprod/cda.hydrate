@@ -1,3 +1,4 @@
+https://docs.anthropic.com/claude/docs/helper-metaprompt-experimental
 
 https://towardsdatascience.com/designing-rags-dbb9a7c1d729
 https://www.cnx-software.com/2024/03/14/the-lark-weather-station-works-with-arduino-esp32-microbit-raspberry-pi-and-other-boards/
