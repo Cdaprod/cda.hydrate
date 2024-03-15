@@ -1,3 +1,4 @@
+https://towardsdatascience.com/designing-rags-dbb9a7c1d729
 https://python.langchain.com/docs/modules/agents/agent_types
 https://python.langchain.com/docs/modules/model_io/prompts/few_shot_examples
 https://python.langchain.com/docs/modules/model_io/prompts/composition
