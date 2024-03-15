@@ -1,3 +1,4 @@
+https://towardsdatascience.com/rag-on-your-laptop-colbert-dspy-streamlit-c206ea92188f
 https://www.infoq.com/articles/aws-lambda-under-the-hood/
 https://towardsdatascience.com/designing-rags-dbb9a7c1d729
 https://python.langchain.com/docs/modules/agents/agent_types
