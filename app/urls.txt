@@ -1,3 +1,4 @@
+https://platform.openai.com/docs/assistants/overview?context=with-streaming
 https://pushcut.io/support/notifications
 https://www.forbes.com/sites/rachelwells/2024/03/14/3-remote-side-hustle-ideas-to-make-100k-in-2024/
 https://docs.anthropic.com/claude/docs/helper-metaprompt-experimental
