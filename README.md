@@ -1,5 +1,7 @@
 # Build with GitHub Actions: MinIO Weaviate Python
 
+[Original MinIO Blog Article](https://blog.min.io/minio-weaviate-unstructured-io)
+
 #### Workflow Status Badges:
 [![Docker-Compose Build Test](https://github.com/Cdaprod/cda.hydrate/actions/workflows/docker-compose-build-test.yml/badge.svg)](https://github.com/Cdaprod/cda.hydrate/actions/workflows/docker-compose-build-test.yml)
 
