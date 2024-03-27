@@ -1,3 +1,4 @@
+https://blog.paperspace.com/introduction-to-3-d-modeling-with-python-scripting/
 https://www.promptingguide.ai/techniques/zeroshot
 https://learn.microsoft.com/en-us/minecraft/creator/scriptapi/minecraft/server-gametest/simulatedplayer?view=minecraft-bedrock-experimental
 https://github.com/microsoft/MinecraftCodex
