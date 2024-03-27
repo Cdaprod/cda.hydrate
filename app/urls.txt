@@ -1,3 +1,4 @@
+https://machinelearningmastery.com/what-are-zero-shot-prompting-and-few-shot-prompting/
 https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbHBRZE81dUJTUnRvc2xqVnYxZ2pXeENNZG5Cd3xBQ3Jtc0tsOXUwMG5OYWU4cmdTR0FfMEFLMHZFRFVJV1JjVU9iWjFVb05ORFItVWFSMzN3X3BMZHAwYk9nV1dPSHlnUHNjRXRTSy1QNzRpUHpRU3FrY1NoMFJ6Y2JTa3dlX1hJWlhiQlB0MFVzajVSbjQ2ZTc5aw&q=https%3A%2F%2Farxiv.org%2Fpdf%2F2401.08500.pdf&v=MvNdgmM7uyc&html_redirect=1
 https://predictivehacks.com/how-to-save-and-load-prompt-templates-with-langchain/
 https://coral.ai/docs/edgetpu/models-intro/
