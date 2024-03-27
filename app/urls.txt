@@ -1,3 +1,4 @@
+https://learn.microsoft.com/en-us/minecraft/creator/scriptapi/minecraft/server-gametest/simulatedplayer?view=minecraft-bedrock-experimental
 https://github.com/microsoft/MinecraftCodex
 https://microsoft.github.io/prompt-engineering/
 https://machinelearningmastery.com/what-are-zero-shot-prompting-and-few-shot-prompting/
