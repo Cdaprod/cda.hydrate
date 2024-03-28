@@ -1,3 +1,4 @@
+https://www.machinekit.io/docs/hal/basic_hal/
 https://gofetch.fail/
 
 
