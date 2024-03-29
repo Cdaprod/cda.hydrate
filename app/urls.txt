@@ -1,3 +1,4 @@
+https://ai-box.eu/category/large-language-models/
 https://www.cyberciti.biz/faq/how-to-enable-rc-local-shell-script-on-systemd-while-booting-linux-system/
 https://www.machinekit.io/docs/hal/basic_hal/
 https://gofetch.fail/
