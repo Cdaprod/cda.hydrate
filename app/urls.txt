@@ -1,3 +1,4 @@
+https://projects-raspberry.com/raspberry-pi-wireless-display-receiver/
 https://skyboo.net/2024/02/preparing-headless-sd-card-for-raspberry-pi-zero-2-w-without-raspberry-pi-imager/
 https://ai-box.eu/category/large-language-models/
 https://www.cyberciti.biz/faq/how-to-enable-rc-local-shell-script-on-systemd-while-booting-linux-system/
