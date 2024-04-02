@@ -1,3 +1,4 @@
+https://blog.langchain.dev/introducing-langserve/
 
 https://www.anthropic.com/research/many-shot-jailbreaking
 https://blog.langchain.dev/code-execution-with-langgraph/
