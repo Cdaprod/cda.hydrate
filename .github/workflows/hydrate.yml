@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests minio weaviate unstructured
+          pip3 install requests minio weaviate unstructured
 
       - name: Run hydrate script
-        run: python .github/scripts/hydrate.py
+        run: python3 .github/scripts/hydrate.py
