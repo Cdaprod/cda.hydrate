@@ -1,3 +1,4 @@
+https://docs.pydantic.dev/latest/concepts/dataclasses/
 https://blog.langchain.dev/introducing-langserve/
 
 https://www.anthropic.com/research/many-shot-jailbreaking
