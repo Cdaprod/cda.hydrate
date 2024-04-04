@@ -1,0 +1,29 @@
+# /.github/workflows/hydrate.yml
+name: Hydrate Data
+
+on:
+  push:
+    paths:
+      - 'app/urls.txt'
+
+jobs:
+  hydrate:
+    runs-on: self-hosted
+    env:
+      MINIO_ROOT_USER: ${{ secrets.MINIO_ROOT_USER }}
+      MINIO_ROOT_PASSWORD: ${{ secrets.MINIO_ROOT_PASSWORD }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: |
+          pip install requests minio weaviate unstructured
+
+      - name: Run hydrate script
+        run: python .github/scripts/hydrate.py

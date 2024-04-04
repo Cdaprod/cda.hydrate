@@ -1,6 +1,10 @@
 name: Docker-Compose Build Test
 
-on: [push]
+on:
+  push:
+    paths:
+      - 'docker-compose.yaml'
+
 
 jobs:
   test:
