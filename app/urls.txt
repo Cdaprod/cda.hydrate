@@ -1,3 +1,4 @@
+https://tailscale.com/kb/1344/deployment-checklist
 https://tailscale.com/kb/1282/docker
 https://tailscale.com/kb/1282/docker
 https://www.composerize.com/
