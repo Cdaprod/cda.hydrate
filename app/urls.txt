@@ -1,3 +1,4 @@
+https://min.io/docs/minio/linux/reference/minio-server/settings/core.html
 https://tailscale.com/kb/1313/serve-examples
 https://tailscale.com/blog/2021-05-github-actions-and-tailscale
 https://arxiv.org/html/2306.08708v2
