@@ -1,3 +1,4 @@
+https://www.anthropic.com/research/many-shot-jailbreaking
 https://music.apple.com/us/album/scottie/1532847755?i=1532848189
 https://blogs.newardassociates.com/blog/2023/you-want-modules-not-microservices.html
 https://github.com/marketplace/actions/connect-tailscale
