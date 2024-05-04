@@ -1,3 +1,4 @@
+https://blogs.newardassociates.com/blog/2023/you-want-modules-not-microservices.html
 https://github.com/marketplace/actions/connect-tailscale
 https://pandalanax.weblog.lol/2024/03/wetransfer-but-on-my-server
 https://framacolibri.org/t/configuring-a-minio-in-the-virtual-host-style/16716
