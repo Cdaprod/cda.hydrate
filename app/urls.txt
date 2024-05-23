@@ -1,3 +1,4 @@
+https://tailscale.com/kb/1185/kubernetes
 https://tailscale.com/kb/1192/acl-samples
 https://api.python.langchain.com/en/latest/chains/langchain.chains.api.base.APIChain.html
 https://sebiweise.hashnode.dev/mastering-advanced-access-controls-with-tailscale-on-your-network
