@@ -1,3 +1,5 @@
+https://blog.min.io/the-future-of-hybrid-cloud-pipelines-integrating-minio-tailscale-and-github-actions/
+http://Unstructured.io
 https://tailscale.com/kb/1185/kubernetes
 https://tailscale.com/kb/1192/acl-samples
 https://api.python.langchain.com/en/latest/chains/langchain.chains.api.base.APIChain.html
