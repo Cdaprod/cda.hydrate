@@ -1,3 +1,4 @@
+https://realpython.com/python-metaclasses/
 https://phoenix.arize.com/
 https://arize.com/blog-course/llm-evaluation-the-definitive-guide/
 https://blog.min.io/the-future-of-hybrid-cloud-pipelines-integrating-minio-tailscale-and-github-actions/
