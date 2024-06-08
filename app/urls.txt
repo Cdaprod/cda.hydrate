@@ -1,3 +1,13 @@
+https://github.com/Cdaprod/cda.minio.git
+http://example.com
+http://example.com
+http://example.com
+http://console.example.com%60
+http://ghcr.io
+http://ghcr.io/cdaprod/cda-minio:latest
+https://tailscale.com/blog/2021-09-github-actions-marketplace
+https://github.com/tailscale/github-action
+https://blog.min.io/the-future-of-hybrid-cloud-pipelines-integrating-minio-tailscale-and-github-actions/
 https://openai.com/index/clip/
 https://platform.openai.com/docs/api-reference/assistants-streaming-v1/events
 https://python.langchain.com/v0.1/docs/langgraph/
