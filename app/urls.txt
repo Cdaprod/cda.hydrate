@@ -1,3 +1,4 @@
+https://tailscale.com/blog/github-codespaces
 https://py2ai.github.io/How-to-configure-Raspberry-Pi-in-Ad-hoc-wifi-mode/
 https://py2ai.github.io/Displaying-Remote-Application/
 https://brand.linkedin.com/content/brand/global/en_us/index/visual-identity/logo
