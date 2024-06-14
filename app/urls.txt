@@ -1,3 +1,4 @@
+https://blog.ktz.me/fully-automated-dns-and-dhcp-with-pihole-and-dnsmasq/
 https://tailscale.com/kb/1292/pikvm
 https://tailscale.com/blog/github-codespaces
 https://py2ai.github.io/How-to-configure-Raspberry-Pi-in-Ad-hoc-wifi-mode/
