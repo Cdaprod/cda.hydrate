@@ -1,3 +1,4 @@
+https://platform.openai.com/docs/guides/text-generation/completions-api
 https://cookbook.openai.com/examples/reproducible_outputs_with_the_seed_parameter
 https://www.docker.com/blog/docker-desktop-4-31/
 https://pkgs.tailscale.com/stable/#spks
