@@ -1,3 +1,4 @@
+https://itsfoss.com/
 https://myscale.com/blog/langchain-generative-ui-tool-personalization-best/
 https://platform.openai.com/docs/guides/text-generation/completions-api
 https://cookbook.openai.com/examples/reproducible_outputs_with_the_seed_parameter
@@ -14,9 +15,6 @@ https://thenewstack.io/ai-agents-key-concepts-and-how-they-overcome-llm-limitati
 tel:(404)%20358-4338
 https://towardsdatascience.com/automating-prompt-engineering-with-dspy-and-haystack-926a637a3f43
 https://github.com/Cdaprod/cda.minio.git
-http://example.com
-http://example.com
-http://example.com
 http://console.example.com%60
 http://ghcr.io
 http://ghcr.io/cdaprod/cda-minio:latest
@@ -61,7 +59,6 @@ https://python.langchain.com/docs/expression_language/primitives/configure/
 https://python.langchain.com/docs/langserve
 https://docs.pydantic.dev/latest/concepts/dataclasses/
 https://blog.langchain.dev/introducing-langserve/
-
 https://www.anthropic.com/research/many-shot-jailbreaking
 https://blog.langchain.dev/code-execution-with-langgraph/
 https://projects-raspberry.com/raspberry-pi-wireless-display-receiver/
@@ -70,8 +67,6 @@ https://ai-box.eu/category/large-language-models/
 https://www.cyberciti.biz/faq/how-to-enable-rc-local-shell-script-on-systemd-while-booting-linux-system/
 https://www.machinekit.io/docs/hal/basic_hal/
 https://gofetch.fail/
-
-
 https://blog.paperspace.com/introduction-to-3-d-modeling-with-python-scripting/
 https://www.promptingguide.ai/techniques/zeroshot
 https://learn.microsoft.com/en-us/minecraft/creator/scriptapi/minecraft/server-gametest/simulatedplayer?view=minecraft-bedrock-experimental
@@ -87,7 +82,6 @@ https://platform.openai.com/docs/assistants/overview?context=with-streaming
 https://pushcut.io/support/notifications
 https://www.forbes.com/sites/rachelwells/2024/03/14/3-remote-side-hustle-ideas-to-make-100k-in-2024/
 https://docs.anthropic.com/claude/docs/helper-metaprompt-experimental
-
 https://towardsdatascience.com/designing-rags-dbb9a7c1d729
 https://www.cnx-software.com/2024/03/14/the-lark-weather-station-works-with-arduino-esp32-microbit-raspberry-pi-and-other-boards/
 https://towardsdatascience.com/rag-on-your-laptop-colbert-dspy-streamlit-c206ea92188f
@@ -104,8 +98,4 @@ https://www.cnx-software.com/2024/02/27/testing-ai-and-llm-on-rockchip-rk3588-us
 https://github.com/Cdaprod/cda.hydrate/settings/actions/runners/new?arch=x64&os=linux
 https://quii.gitbook.io/learn-go-with-tests/
 https://learnxinyminutes.com/docs/go/
-https://go.dev/doc/effective_go
-
-
- 
-  
+https://go.dev/doc/effective_go 
