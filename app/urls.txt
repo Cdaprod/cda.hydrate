@@ -1,3 +1,4 @@
+https://ostechnix.com/
 https://itsfoss.com/
 https://myscale.com/blog/langchain-generative-ui-tool-personalization-best/
 https://platform.openai.com/docs/guides/text-generation/completions-api
