@@ -1,3 +1,4 @@
+https://pathway.com/developers/templates/multimodal-rag
 https://ostechnix.com/
 https://itsfoss.com/
 https://myscale.com/blog/langchain-generative-ui-tool-personalization-best/
