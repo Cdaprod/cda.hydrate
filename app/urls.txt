@@ -1,3 +1,4 @@
+https://platform.openai.com/docs/guides/text-generation/chat-completions-api
 https://platform.openai.com/docs/guides/vision
 https://pathway.com/developers/templates/multimodal-rag
 https://ostechnix.com/
