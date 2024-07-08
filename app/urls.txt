@@ -1,3 +1,6 @@
+https://microsoft.github.io/graphrag/
+https://arxiv.org/pdf/2404.16130
+https://pingcap.com/blog/GraphRAG
 https://platform.openai.com/docs/guides/text-generation/chat-completions-api
 https://platform.openai.com/docs/guides/vision
 https://pathway.com/developers/templates/multimodal-rag
