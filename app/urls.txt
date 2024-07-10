@@ -1,3 +1,4 @@
+https://www.reddit.com/r/LangChain/s/kPK2u2jFi1
 https://cookbook.openai.com/examples/how_to_call_functions_with_chat_models
 https://platform.openai.com/docs/guides/function-calling
 https://www.skool.com/new-society/about
