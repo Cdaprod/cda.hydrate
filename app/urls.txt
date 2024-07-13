@@ -1,3 +1,4 @@
+https://ubuntu.com/server/docs/how-to-netboot-the-server-installer-on-amd64
 https://learn.pimoroni.com/article/getting-started-with-nvme-base
 https://min.io/docs/minio/linux/operations/monitoring/collect-minio-metrics-using-prometheus.html
 https://prometheus.io/docs/concepts/data_model/#data-model
