@@ -1,3 +1,4 @@
+https://cloudinit.readthedocs.io/en/latest/reference/examples.html
 https://wiki.52pi.com/index.php?title=EP-0210
 https://ubuntu.com/server/docs/how-to-netboot-the-server-installer-on-amd64
 https://learn.pimoroni.com/article/getting-started-with-nvme-base
