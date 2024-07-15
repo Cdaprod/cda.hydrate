@@ -1,3 +1,4 @@
+https://help.ubuntu.com/community/NetworkManager
 https://manpages.ubuntu.com/manpages/bionic/man5/systemd.network.5.html
 https://www.raspberrypi.com/documentation/computers/linux_kernel.html
 https://www.raspberrypi.com/documentation/computers/linux_kernel.html
