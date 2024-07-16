@@ -1,3 +1,4 @@
+https://huggingface.co/docs/transformers/model_doc/layoutlmv3
 https://arxiv.org/abs/2103.00069
 https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/build-intelligent-rag-for-multimodality-and-complex-document/ba-p/4118184
 https://piktochart.com/
