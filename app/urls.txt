@@ -1,3 +1,4 @@
+https://dev.to/codeparrot/cli-tools-every-developer-should-know-6kd
 https://pypi.org/project/PyPDF2/
 https://www.reportlab.com/
 https://arxiv.org/abs/2204.08387
