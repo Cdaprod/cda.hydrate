@@ -1,3 +1,4 @@
+https://martinfowler.com/microservices/
 https://www.hivemq.com/mqtt/
 https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/
 https://www.ansiblepilot.com/articles/backup-ansible-automation-platform/
