@@ -1,3 +1,4 @@
+https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/
 https://www.ansiblepilot.com/articles/backup-ansible-automation-platform/
 https://dev.to/codeparrot/cli-tools-every-developer-should-know-6kd
 https://pypi.org/project/PyPDF2/
