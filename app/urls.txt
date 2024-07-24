@@ -1,3 +1,4 @@
+https://arxiv.org/abs/2406.18532
 https://aws.amazon.com/event-driven-architecture/
 https://martinfowler.com/microservices/
 https://www.hivemq.com/mqtt/
