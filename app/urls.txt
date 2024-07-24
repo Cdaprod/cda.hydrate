@@ -1,3 +1,14 @@
+https://swimm.io/learn/system-design/6-software-design-principles-used-by-successful-engineers
+https://quanticdev.com/articles/software-design-patterns/
+https://quanticdev.com/articles/software-design-patterns/
+https://quanticdev.com/articles/software-design-patterns/
+https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/
+https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/
+https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/
+https://www.freecodecamp.org/news/how-to-write-a-good-software-design-document-66fcf019569c/
+https://www.lucidchart.com/blog/how-to-design-software-architecture
+https://quanticdev.com/articles/software-design-patterns/
+https://quanticdev.com/articles/software-design-patterns/
 https://arxiv.org/abs/2406.18532
 https://aws.amazon.com/event-driven-architecture/
 https://martinfowler.com/microservices/
