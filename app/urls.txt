@@ -1,3 +1,4 @@
+https://diagrammergpt.github.io/
 https://realpython.com/python-mutable-vs-immutable-types/
 https://ar5iv.labs.arxiv.org/html/2310.12128
 https://swimm.io/learn/system-design/6-software-design-principles-used-by-successful-engineers
