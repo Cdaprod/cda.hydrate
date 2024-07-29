@@ -1,3 +1,4 @@
+https://stackoverflow.com/questions/1466676/create-a-wrapper-class-to-call-a-pre-and-post-function-around-existing-functions
 https://diagrammergpt.github.io/
 https://realpython.com/python-mutable-vs-immutable-types/
 https://ar5iv.labs.arxiv.org/html/2310.12128
