@@ -1,3 +1,4 @@
+https://cookbook.openai.com/examples/batch_processing
 https://platform.openai.com/docs/overview
 https://platform.openai.com/docs/assistants/deep-dive/data-access-guidance
 https://platform.openai.com/docs/api-reference/uploads/create?lang=python
