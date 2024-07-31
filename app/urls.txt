@@ -1,3 +1,4 @@
+https://nifi.apache.org/docs/nifi-docs/html/user-guide.html
 https://platform.openai.com/docs/assistants/tools/file-search
 https://cookbook.openai.com/examples/batch_processing
 https://platform.openai.com/docs/overview
