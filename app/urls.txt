@@ -1,3 +1,4 @@
+https://wiki.geekworm.com/How_to_update_eeprom_firmware
 https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#automatic-updates
 https://wso2.com/whitepapers/open-source-primer/
 https://primer.style/
