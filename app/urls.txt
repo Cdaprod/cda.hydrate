@@ -1,3 +1,4 @@
+https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#automatic-updates
 https://wso2.com/whitepapers/open-source-primer/
 https://primer.style/
 https://adasci.org/courses/building-multi-agent-llms-with-autogen/
