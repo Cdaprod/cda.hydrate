@@ -1,3 +1,4 @@
+https://wso2.com/whitepapers/open-source-primer/
 https://primer.style/
 https://adasci.org/courses/building-multi-agent-llms-with-autogen/
 https://nifi.apache.org/docs/nifi-docs/html/user-guide.html
