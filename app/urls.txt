@@ -1,3 +1,4 @@
+https://basecamp.com/shapeup
 https://wasp-lang.dev/docs/data-model/crud
 https://wasp-lang.dev/docs/data-model/crud
 https://usemage.ai/
