@@ -1,4 +1,5 @@
 https://wasp-lang.dev/docs/data-model/crud
+https://wasp-lang.dev/docs/data-model/crud
 https://usemage.ai/
 https://fossengineer.com/python-quick-ui-ai-projects/
 https://cloud.theodo.com/en/blog/raspberry-kubernetes
