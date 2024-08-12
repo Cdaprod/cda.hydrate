@@ -1,3 +1,4 @@
+https://fossengineer.com/python-quick-ui-ai-projects/
 https://cloud.theodo.com/en/blog/raspberry-kubernetes
 https://anthonynsimon.com/blog/kubernetes-cluster-raspberry-pi/
 https://everythingdevops.dev/step-by-step-guide-creating-a-kubernetes-cluster-on-raspberry-pi-5-with-k3s/
