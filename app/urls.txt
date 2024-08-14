@@ -1,3 +1,4 @@
+https://www.kernel.org/doc/html/latest/admin-guide/sysrq.html
 https://www.mptcp.dev/
 https://binarystream.com/blog/the-definitive-guide-to-per-user-billing/?utm_campaign=Blog%20body%20text%20link&utm_source=blog
 https://binarystream.com/blog/the-definitive-guide-to-tiered-pricing-with-examples/?utm_campaign=Blog%20body%20text%20link&utm_source=blog
