@@ -1,3 +1,4 @@
+https://www.researchgate.net/publication/377316291_Application_of_Meta-Programming_Techniques_for_Accelerating_Software_Development_and_Improving_Quality
 https://docs.deepwisdom.ai/main/en/guide/tutorials/agent_101.html
 https://docs.deepwisdom.ai/main/en/guide/tutorials/multi_agent_101.html
 file-service://file-ugs3f8ZOLiJ1jNBGENNFhPSu
