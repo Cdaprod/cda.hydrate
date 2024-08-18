@@ -1,3 +1,4 @@
+https://paperswithcode.com/paper/metagpt-meta-programming-for-multi-agent
 https://docs.deepwisdom.ai/main/en/guide/tutorials/create_and_use_tools.html
 https://www.kernel.org/doc/html/latest/admin-guide/sysrq.html
 https://www.mptcp.dev/
