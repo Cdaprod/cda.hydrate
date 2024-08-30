@@ -1,3 +1,4 @@
+https://www.vellum.ai/blog/openai-function-calling-tutorial
 https://mer.vin/2024/03/anthropic-tools/
 https://langchain-ai.github.io/langgraph/reference/graphs/
 https://www.researchgate.net/publication/377316291_Application_of_Meta-Programming_Techniques_for_Accelerating_Software_Development_and_Improving_Quality
