@@ -1,3 +1,4 @@
+https://aider.chat/
 https://ask.aider.ai/help
 https://www.vellum.ai/blog/openai-function-calling-tutorial
 https://mer.vin/2024/03/anthropic-tools/
