@@ -1,3 +1,4 @@
+https://gitversion.net/docs/reference/configuration
 https://www.opsatscale.com/getting-started/Git-Trunk-based-development/
 https://blog.fkan.se/ci-cd/simple-release-versioning-with-trunkbased-development-semver-and-conventional-commits/
 https://aider.chat/
