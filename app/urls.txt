@@ -1,3 +1,4 @@
+https://cookbook.openai.com/examples/how_to_handle_rate_limits
 https://ui.shadcn.com/
 https://dmitripavlutin.com/use-react-memo-wisely/
 https://gitversion.net/docs/reference/configuration
