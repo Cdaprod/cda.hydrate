@@ -1,3 +1,4 @@
+https://www.sanity.io/docs/customizing-the-portable-text-editor
 https://www.sanity.io/plugins/sanity-codegen
 https://www.jimmymills.io/blog/openai-assistants-api/retrieval
 https://www.jimmymills.io/blog/openai-assistants-api
