@@ -10,7 +10,7 @@ services:
     - --scheme
     - http
     container_name: weaviate_hydrate
-    image: semitechnologies/weaviate:latest
+    image: cr.weaviate.io/semitechnologies/weaviate:latest
     ports:
       - 8080:8080
       - 50051:50051
